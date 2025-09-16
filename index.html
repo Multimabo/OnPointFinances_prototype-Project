@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnPointFinances - Enabling Financial Freedom</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="products/loans.html">Loans</a></li>
+                            <li><a class="dropdown-item" href="products/investment.html">Investment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why-choose-us.html">Why Choose Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Get in Touch</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning" href="loan-application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Homepage Only) -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-lg-start text-center">
+                    <h1 class="mb-3">Need a <span style="color:var(--secondary-color)">financial friend?</span></h1>
+                    <p class="lead mb-4">Personal Loans, a MobiMoney™ Account & Funeral Cover. We’re here for you when you need us!</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center mb-4">
+                        <a href="loan-application.html" class="btn btn-warning btn-lg px-4">Get a Quote</a>
+                        <a href="about.html" class="btn btn-outline-primary btn-lg px-4">Learn More</a>
+                    </div>
+                    <div class="d-flex flex-wrap gap-4 mb-4 justify-content-lg-start justify-content-center">
+                        <div class="text-center">
+                            <div class="fs-2 fw-bold" style="color:var(--primary-color)">R25 000</div>
+                            <div class="small">Loans up to</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="fs-2 fw-bold" style="color:var(--primary-color)">R100 000</div>
+                            <div class="small">Funeral Cover up to</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="fs-2 fw-bold" style="color:var(--primary-color)">R10 000</div>
+                            <div class="small">MobiMoney™ Account up to</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <span class="fw-bold">4.6</span>
+                        <span class="text-muted small">Google review rating - highest in the market</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                    <img src="assets/images/logo.svg" alt="OnPointFinances Logo" class="img-fluid" style="max-height:220px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section (Homepage Only) -->
+    <!-- Product Highlights -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Products that suit your needs</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="icon-box mb-3"><i class="fas fa-wallet"></i></div>
+                        <h3 class="mb-2">MobiMoney™</h3>
+                        <p>FinChoice MobiMoney™ - your flexible account for those emergencies. Get up to R10 000.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="icon-box mb-3"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3 class="mb-2">Personal Loans</h3>
+                        <p>FinChoice Personal Loans – for life’s bigger expenses. Get up to R25 000.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="icon-box mb-3"><i class="fas fa-heart"></i></div>
+                        <h3 class="mb-2">Funeral Cover</h3>
+                        <p>FinChoice Funeral Cover – for saying goodbye the right way. Get up to R100 000 cover per person.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Homepage Only) -->
+    <!-- How it Works -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">How it works</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 text-center">
+                    <div class="icon-box mb-2"><span class="fw-bold fs-4">01</span></div>
+                    <p>Find a product to suit your financial needs.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon-box mb-2"><span class="fw-bold fs-4">02</span></div>
+                    <p>Get a quote and apply online in minutes. It’s safe and secure.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon-box mb-2"><span class="fw-bold fs-4">03</span></div>
+                    <p>Accept your DebiCheck mandate and upload any required documents.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon-box mb-2"><span class="fw-bold fs-4">04</span></div>
+                    <p>Loan payout can take up to 24 hours, Funeral Cover is immediate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What our customers say about us</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <p class="mb-3">“MobiMoney is so easy and fast. OnPointFinances is always there for me - they are like the family I never had.”</p>
+                        <div class="fw-bold">TSHEGOFATSO</div>
+                        <div class="text-muted small">from Soshanguve</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <p class="mb-3">“I’ve received the best service, and the app is user friendly so I will highly recommend OnPointFinances. Always there when I need a little help.”</p>
+                        <div class="fw-bold">BLANCHE</div>
+                        <div class="text-muted small">from Cape Town</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <p class="mb-3">“I love the OnPointFinances page because I can run and use my account the way I want to.”</p>
+                        <div class="fw-bold">NICHOLINE</div>
+                        <div class="text-muted small">from Boksburg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="60">
+                    </div>
+                    <p>Enabling financial freedom for South Africans. We provide transparent, flexible loan services and affordable funeral policies to help you achieve your financial goals.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/27834852436" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+27834852436" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <p class="footer-registration">We are a registered credit provider (NCRCP5798) and authorized financial service provider (54220). Terms and conditions apply.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Lower Interest on Loans</a></li>
+                        <li><a href="services.html">Affordable Funeral Policies</a></li>
+                        <li><a href="services.html">Fast and Easy Approval</a></li>
+                        <li><a href="services.html">WhatsApp Application</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +27 83 485 2436</p>
+                        <p><i class="fas fa-envelope"></i> info@onpointfin.co.za</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 08:00-17:00</p>
+                        <p><i class="fas fa-clock"></i> Weekends: 08:00-13:00</p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27834852436">WhatsApp Us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OnPointFinances. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="50">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="why-choose-us.html" class="nav-link">Why Choose Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="apply.html" class="nav-link btn-apply">Apply Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Enabling <span class="highlight">Financial Freedom</span></h1>
+                <h2>Get loans from <span class="amount">R500 - R8,000</span></h2>
+                <p>Professional financial solutions for South Africans. Fast and easy approval, flexible repayment options, and lower interest on loans. Your financial partner for life.</p>
+                <div class="hero-buttons">
+                    <a href="apply.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Apply Now
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="hero-trust" data-aos="fade-up" data-aos-delay="400">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Registered Credit Provider</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24hr Approval</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-users"></i>
+                        <span>5+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left">
+                <div class="hero-visual">
+                    <!-- Logo Integration -->
+                    <div class="hero-logo">
+                        <img src="assets/images/logo.svg" alt="OnPointFinances Logo" class="floating-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enhanced Wave -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="links-grid">
+                <a href="about.html" class="link-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>About Us</h3>
+                    <p>Learn about our mission and values</p>
+                </a>
+                <a href="services.html" class="link-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Our Services</h3>
+                    <p>Discover our financial solutions</p>
+                </a>
+                <a href="why-choose-us.html" class="link-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Why Choose Us</h3>
+                    <p>See what makes us different</p>
+                </a>
+                <a href="contact.html" class="link-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contact Us</h3>
+                    <p>Get in touch today</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="60">
+                    </div>
+                    <p>Enabling financial freedom for South Africans. We provide transparent, flexible loan services and affordable funeral policies to help you achieve your financial goals.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/27834852436" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+27834852436" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <p class="footer-registration">We are a registered credit provider (NCRCP5798) and authorized financial service provider (54220). Terms and conditions apply.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Lower Interest on Loans</a></li>
+                        <li><a href="services.html">Affordable Funeral Policies</a></li>
+                        <li><a href="services.html">Fast and Easy Approval</a></li>
+                        <li><a href="services.html">WhatsApp Application</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +27 83 485 2436</p>
+                        <p><i class="fas fa-envelope"></i> info@onpointfin.co.za</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 08:00-17:00</p>
+                        <p><i class="fas fa-clock"></i> Weekends: 08:00-13:00</p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27834852436">WhatsApp Us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OnPointFinances. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OnPointFinances - Apply for Loan - Quick and Easy Application Process">
+    <meta name="keywords" content="OnPointFinances, apply, loan application, financial services">
+    <title>Apply for Loan | OnPointFinances</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <li><a class="dropdown-item" href="products/loans.html">Loans</a></li>
+                            <li><a class="dropdown-item" href="products/investment.html">Investment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why-choose-us.html">Why Choose Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Get in Touch</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning active" href="loan-application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Apply for Your Loan Today</h1>
+            <p>Get the financial assistance you need with our simple and transparent application process</p>
+        </div>
+    </section>
+
+    <!-- Loan Application Section -->
+    <section id="apply" class="apply">
+        <div class="container">
+            <div class="apply-content">
+                <div class="apply-text" data-aos="fade-right">
+                    <h2>Quick & Easy Application</h2>
+                    <p>Get the financial assistance you need with our simple and transparent application process.</p>
+                    <div class="apply-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Quick and easy application</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Fast approval within 24 hours</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Flexible repayment options</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check"></i>
+                            <span>Transparent terms and conditions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="whatsapp-apply">
+                        <h3>Apply via WhatsApp</h3>
+                        <p>For faster processing, you can also apply directly via WhatsApp:</p>
+                        <a href="https://wa.me/27834852436" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Apply via WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <div class="apply-form" data-aos="fade-left">
+                    <form id="loanForm">
+                        <h3>Loan Application</h3>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="idNumber">ID Number</label>
+                            <input type="text" id="idNumber" name="idNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loanAmount">Loan Amount (R)</label>
+                            <select id="loanAmount" name="loanAmount" required>
+                                <option value="">Select Amount</option>
+                                <option value="500">R500</option>
+                                <option value="1000">R1,000</option>
+                                <option value="1500">R1,500</option>
+                                <option value="2000">R2,000</option>
+                                <option value="2500">R2,500</option>
+                                <option value="3000">R3,000</option>
+                                <option value="3500">R3,500</option>
+                                <option value="4000">R4,000</option>
+                                <option value="4500">R4,500</option>
+                                <option value="5000">R5,000</option>
+                                <option value="5500">R5,500</option>
+                                <option value="6000">R6,000</option>
+                                <option value="6500">R6,500</option>
+                                <option value="7000">R7,000</option>
+                                <option value="7500">R7,500</option>
+                                <option value="8000">R8,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="repaymentPeriod">Repayment Period</label>
+                            <select id="repaymentPeriod" name="repaymentPeriod" required>
+                                <option value="">Select Period</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="fortnightly">Fortnightly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="employmentStatus">Employment Status</label>
+                            <select id="employmentStatus" name="employmentStatus" required>
+                                <option value="">Select Status</option>
+                                <option value="employed">Employed</option>
+                                <option value="self-employed">Self-employed</option>
+                                <option value="unemployed">Unemployed</option>
+                                <option value="pensioner">Pensioner</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="monthlyIncome">Monthly Income (R)</label>
+                            <input type="number" id="monthlyIncome" name="monthlyIncome" min="0" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo-footer.svg" alt="OnPointFinances - enabling financial freedom" height="60">
+                    </div>
+                    <p>Enabling financial freedom for South Africans. We provide transparent, flexible loan services and affordable funeral policies to help you achieve your financial goals.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/27834852436" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+27834852436" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                    <p class="footer-registration">We are a registered credit provider (NCRCP5798) and authorized financial service provider (54220). Terms and conditions apply.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Lower Interest on Loans</a></li>
+                        <li><a href="services.html">Affordable Funeral Policies</a></li>
+                        <li><a href="services.html">Fast and Easy Approval</a></li>
+                        <li><a href="services.html">WhatsApp Application</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +27 83 485 2436</p>
+                        <p><i class="fas fa-envelope"></i> info@onpointfin.co.za</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 08:00-17:00</p>
+                        <p><i class="fas fa-clock"></i> Weekends: 08:00-13:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OnPointFinances. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

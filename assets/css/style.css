@@ -1,0 +1,177 @@
+/* Custom CSS for OnPointFinances */
+
+/* Hero Section */
+
+.hero-section {
+    background: var(--bg-white);
+    color: var(--primary-color);
+    padding: 80px 0 40px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: var(--primary-color);
+}
+
+.hero-section .lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+/* Icon Boxes */
+
+.icon-box {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    color: #fff;
+    background: var(--secondary-color);
+    font-size: 2rem;
+    box-shadow: var(--shadow-light);
+}
+
+/* Service Cards */
+
+.card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Loan Calculator */
+.form-range {
+    height: 8px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #007bff;
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: #007bff;
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+
+/* Testimonials */
+
+.bg-primary .card {
+    background-color: #fff !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--primary-color);
+}
+
+/* Social Icons */
+/* Social icons use accent color */
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+    font-size: 1.2rem;
+    transition: background 0.2s, color 0.2s;
+}
+.social-icons a:hover {
+
+
+.social-icons a:hover {
+    background-color: #ff9900;
+    color: #142945;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .d-flex.gap-3 {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+    
+    .d-flex.gap-3 .btn {
+        width: 100%;
+    }
+}
+
+/* Navigation */
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+/* Custom Button Styles */
+/* Gold button */
+.btn-warning {
+    background-color: #ff9900;
+    border-color: #ff9900;
+    color: #142945;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #ffb84d;
+    border-color: #ffb84d;
+    color: #142945;
+}
+
+
+/* Footer */
+
+
+footer .social-icons a {
+    margin-right: 10px;
+}
+
+/* Utility Classes */
+.text-primary {
+    color: #142945 !important;
+}
+
+.bg-primary {
+    background-color: #142945 !important;
+}

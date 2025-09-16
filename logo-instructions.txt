@@ -1,0 +1,11 @@
+<!-- This is a placeholder for the PNG logo -->
+<!-- In a real implementation, you would use an image editing tool to create a PNG version -->
+<!-- The SVG version above will work perfectly for modern browsers -->
+
+<!-- If you need a PNG version, you can:
+1. Open the SVG file in a web browser
+2. Take a screenshot or use "Save as PNG" if available
+3. Or use an online SVG to PNG converter
+4. Or use image editing software like GIMP, Photoshop, or Canva -->
+
+<!-- For now, the SVG logo will work perfectly in all modern browsers -->

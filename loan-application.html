@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application - OnPointFinances</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products/loans.html">Loans</a></li>
+                            <li><a class="dropdown-item" href="products/investment.html">Investment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why-choose-us.html">Why Choose Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Get in Touch</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-warning active" href="loan-application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loan Application Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="mb-0">Loan Application</h2>
+                        </div>
+                        <div class="card-body p-4">
+                            <form id="loanApplicationForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="idNumber" class="form-label">ID Number</label>
+                                        <input type="text" class="form-control" id="idNumber" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="loanAmount" class="form-label">Loan Amount (R)</label>
+                                        <select class="form-select" id="loanAmount" required>
+                                            <option value="">Select amount</option>
+                                            <option value="500">R500</option>
+                                            <option value="1000">R1,000</option>
+                                            <option value="2000">R2,000</option>
+                                            <option value="3000">R3,000</option>
+                                            <option value="4000">R4,000</option>
+                                            <option value="5000">R5,000</option>
+                                            <option value="6000">R6,000</option>
+                                            <option value="7000">R7,000</option>
+                                            <option value="8000">R8,000</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="loanTerm" class="form-label">Repayment Term</label>
+                                        <select class="form-select" id="loanTerm" required>
+                                            <option value="">Select term</option>
+                                            <option value="3">3 months</option>
+                                            <option value="6">6 months</option>
+                                            <option value="9">9 months</option>
+                                            <option value="12">12 months</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="purpose" class="form-label">Purpose of Loan</label>
+                                        <textarea class="form-control" id="purpose" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">terms and conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">Submit Application</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Loan Agreement Terms</h6>
+                    <p>1. The loan amount will be subject to a maximum of R8,000 based on credit assessment.</p>
+                    <p>2. Interest rate of 15% per annum will be charged on the loan amount.</p>
+                    <p>3. Repayment will be made in monthly installments over the selected term.</p>
+                    <p>4. Late payments will incur additional charges of 5% of the installment amount.</p>
+                    <p>5. The lender reserves the right to decline any application without providing reasons.</p>
+                    <p>6. All information provided must be accurate and complete.</p>
+                    <p>7. NCRCP No: 54220</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="40" class="mb-3">
+                    <p>Enabling financial freedom through affordable loans and investment solutions.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-decoration-none me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-decoration-none me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-decoration-none me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/27834852436" class="text-decoration-none"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="products/loans.html" class="text-decoration-none">Loans</a></li>
+                        <li class="mb-2"><a href="products/investment.html" class="text-decoration-none">Investments</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Thusong Center, Mthwazi Street, Zwelethemba
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone-alt me-2"></i>
+                            083 485 2436
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@onpointfin.co.za
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5>Office Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Weekdays: 8:00 - 17:00</li>
+                        <li class="mb-2">Saturday: 8:00 - 13:00</li>
+                        <li class="mb-2">Sunday: Closed</li>
+                    </ul>
+                    <div class="mb-3">
+                        <small>NCRCP No: 54220</small>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <small>&copy; 2025 OnPointFinances. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small>
+                        <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-decoration-none">Terms of Service</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+    <!-- Footer -->
+    <footer class="bg-light pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="assets/images/logo.svg" alt="OnPointFinances Logo" height="40" class="mb-3">
+                    <p>Enabling financial freedom through affordable loans and investment solutions.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-phone-alt me-2"></i>
+                            083 485 2436
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@onpointfin.co.za
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Office Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Weekdays: 8:00 - 17:00</li>
+                        <li class="mb-2">Saturday: 8:00 - 13:00</li>
+                        <li class="mb-2">Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <small>&copy; 2025 OnPointFinances. All rights reserved. | NCRCP No: 54220</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
